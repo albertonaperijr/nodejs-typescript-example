@@ -64,7 +64,7 @@ MYSQL_PASSWORD=
 
 | column name | data type | details | 
 | ----------- | --------- | ------- |
-| id | bigint | not null, primary key |
+| pk_student_id | bigint | not null, primary key |
 | fk_teacher_user_id | bigint | not null, indexed, foreign key |
 | fk_student_user_id | bigint | not null, indexed, foreign key |
 | status | int | not null |
