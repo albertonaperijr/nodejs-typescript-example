@@ -1,0 +1,26 @@
+[{
+    "pkStudentId": 1,
+    "fkTeacherUserId": 2,
+    "fkStudentUserId": 6,
+    "status": 1
+}, {
+    "pkStudentId": 2,
+    "fkTeacherUserId": 2,
+    "fkStudentUserId": 7,
+    "status": 1
+}, {
+    "pkStudentId": 3,
+    "fkTeacherUserId": 2,
+    "fkStudentUserId": 8,
+    "status": 1
+}, {
+    "pkStudentId": 4,
+    "fkTeacherUserId": 3,
+    "fkStudentUserId": 6,
+    "status": 1
+}, {
+    "pkStudentId": 5,
+    "fkTeacherUserId": 3,
+    "fkStudentUserId": 7,
+    "status": 1
+}]

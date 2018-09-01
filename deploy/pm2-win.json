@@ -1,0 +1,21 @@
+{
+    "apps": [{
+        "name": "nodejs-assessment",
+        "script": "./bin/index",
+        "cwdx": "/var/www/nodejs-assessment",
+        "watchx": true,
+        "exec_modex": "cluster",
+        "log_file": "/nodejs-assessment-logs/nodejs-assessment.log",
+        "out_file": "/nodejs-assessment-logs/nodejs-assessment.log",
+        "error_file": "/nodejs-assessment-logs/nodejs-assessment.log",
+        "merge_logs": true,
+        "log_format": ":date.color :level.blue :msg",
+        "log_date_format": "YYYY-MM-DD HH:mm Z",
+        "env": {
+            "NODE_ENV": "development"
+        },
+        "env_production": {
+            "NODE_ENV": "production"
+        }
+    }]
+}

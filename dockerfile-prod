@@ -1,0 +1,47 @@
+FROM node:8.11-alpine
+LABEL maintainer="Alberto Naperi Jr. <albertonaperijr@gmail.com>"
+
+# Default to UTF-8 file.encoding
+ENV LANG C.UTF-8
+
+RUN apk update && \
+   apk upgrade && \
+   apk add --no-cache bash git
+   # apk add --no-cache bash git yarn
+
+# Assign volume
+VOLUME ["/opt/.pm2/nodejs-assessment"]
+
+RUN mkdir -p /var/www/nodejs-assessment
+
+# Define working directory
+WORKDIR /var/www/nodejs-assessment
+
+# ADD . /var/www/nodejs-assessment
+
+# Bundle APP files/
+COPY bin bin/
+COPY deploy/pm2-unix.json deploy/
+COPY src src/
+COPY .env .
+COPY .babelrc .
+COPY package.json .
+COPY tsconfig.json .
+COPY tslint.json .
+COPY webpack.config.js .
+COPY yarn.lock .
+
+# Install app dependencies
+ENV NPM_CONFIG_LOGLEVEL warn
+RUN npm install -g pm2
+RUN yarn install && yarn webpack:min
+
+# COPY docker-entrypoint.sh /
+# ENTRYPOINT ["/docker-entrypoint.sh"]
+
+# Expose port
+EXPOSE 9001
+
+# Run app
+# CMD pm2-runtime start --no-daemon ./deploy/pm2-unix.json --only nodejs-assessment --env production
+CMD pm2 start --no-daemon ./deploy/pm2-unix.json --only nodejs-assessment --env production

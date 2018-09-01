@@ -1,0 +1,97 @@
+[{
+    "pkUserId": 1,
+    "firstName": "Ken",
+    "lastName": "T",
+    "photo": "",
+    "email": "teacherken@gmail.com",
+    "accessLevel": 1,
+    "status": 1
+}, {
+    "pkUserId": 2,
+    "firstName": "Ken",
+    "lastName": "T",
+    "photo": "",
+    "email": "teacherken@example.com",
+    "accessLevel": 1,
+    "status": 1
+}, {
+    "pkUserId": 3,
+    "firstName": "Joe",
+    "lastName": "T",
+    "photo": "",
+    "email": "teacherjoe@example.com",
+    "accessLevel": 1,
+    "status": 1
+}, {
+    "pkUserId": 4,
+    "firstName": "Jon",
+    "lastName": "S",
+    "photo": "",
+    "email": "studentjon@example.com",
+    "accessLevel": 2,
+    "status": 1
+}, {
+    "pkUserId": 5,
+    "firstName": "Hon",
+    "lastName": "S",
+    "photo": "",
+    "email": "studenthon@example.com",
+    "accessLevel": 2,
+    "status": 1
+}, {
+    "pkUserId": 6,
+    "firstName": "Com",
+    "lastName": "S 1",
+    "photo": "",
+    "email": "commonstudent1@gmail.com",
+    "accessLevel": 2,
+    "status": 1
+}, {
+    "pkUserId": 7,
+    "firstName": "Com",
+    "lastName": "S 2",
+    "photo": "",
+    "email": "commonstudent2@gmail.com",
+    "accessLevel": 2,
+    "status": 1
+}, {
+    "pkUserId": 8,
+    "firstName": "Jake",
+    "lastName": "S",
+    "photo": "",
+    "email": "student.only.under.teacher.ken@gmail.com",
+    "accessLevel": 2,
+    "status": 1
+}, {
+    "pkUserId": 9,
+    "firstName": "Mary",
+    "lastName": "S",
+    "photo": "",
+    "email": "studentmary@gmail.com",
+    "accessLevel": 2,
+    "status": 1
+}, {
+    "pkUserId": 10,
+    "firstName": "Agnes",
+    "lastName": "S",
+    "photo": "",
+    "email": "studentagnes@example.com",
+    "accessLevel": 2,
+    "status": 1
+}, {
+    "pkUserId": 11,
+    "firstName": "Miche",
+    "lastName": "S",
+    "photo": "",
+    "email": "studentmiche@example.com",
+    "accessLevel": 2,
+    "status": 1
+}, {
+    "pkUserId": 12,
+    "firstName": "Bob",
+    "lastName": "S",
+    "photo": "",
+    "email": "studentbob@example.com",
+    "accessLevel": 2,
+    "status": 1
+}]
