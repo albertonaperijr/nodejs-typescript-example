@@ -1,4 +1,4 @@
-# NodeJS Assessment
+# NodeJS TypeScript Example
 
 ## Local Setup
 
